@@ -3,6 +3,7 @@ import { useState } from "react";
 import MobileNav from "./MobileNav";
 import logo from "../assets/icons/person.png";
 import { sidebarLinks } from "@/constants"; // Import sidebarLinks
+import { ChevronDownIcon } from "@heroicons/react/24/solid";
 
 const Navbar = () => {
   const { pathname } = useLocation();
@@ -47,8 +48,9 @@ const Navbar = () => {
                     width={20}
                     height={20}
                   />
-                  <p className="text-md font-semibold text-white">
+                  <p className="text-md font-semibold text-white flex items-center gap-1">
                     {item.label}
+                  {item.sublinks ? <ChevronDownIcon height={14} color="white"/> : ""}
                   </p>
                 </Link>
               </div>
