@@ -12,7 +12,7 @@ const Navbar = () => {
           alt="logo"
           className="max-sm:size-10"
         />
-        <p className="text-[26px] font-extrabold text-white max-sm:hidden">
+        <p className="text-[20px] font-extrabold text-white max-sm:hidden">
           Students POC
         </p>
       </Link>
