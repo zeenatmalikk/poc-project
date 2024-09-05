@@ -15,7 +15,6 @@ const GridPage: React.FC = () => {
     data: students,
     loading,
     error,
-    refetch,
   } = useFetch<Student[]>("https://freetestapi.com/api/v1/students?limit=12");
 
   const [selectedStudent, setSelectedStudent] = useState<Student | null>(null);

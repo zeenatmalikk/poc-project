@@ -7,7 +7,6 @@ import {
 import { sidebarLinks } from "../constants/index";
 import hamburger from "../assets/icons/hamburger.svg";
 import { Link, useLocation } from "react-router-dom";
-import { XCircleIcon } from "@heroicons/react/16/solid";
 
 const MobileNav = () => {
   const location = useLocation();
